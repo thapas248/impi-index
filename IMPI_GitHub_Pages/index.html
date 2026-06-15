@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IMPI - India Market Portfolio Index</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="title">IMPI</div>
+  <div class="subtitle">India Market Portfolio Index</div>
+
+  <div class="admin-box">
+    <input id="adminPass" type="password" placeholder="Admin Passcode"/>
+    <button onclick="unlockAdmin()">Unlock</button>
+  </div>
+</div>
+
+<div class="dashboard">
+
+  <div class="card main">
+    <h1 id="indexValue">100.00</h1>
+  </div>
+
+  <div class="card">
+    <h3>Chart</h3>
+    <canvas id="mainChart"></canvas>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
